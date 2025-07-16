@@ -1,4 +1,4 @@
-from typing import override
+from ibgeapi._compat import override
 from ibgeapi.models.region import Region
 from ibgeapi.services.location import LocationService
 
