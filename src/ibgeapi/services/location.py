@@ -26,7 +26,7 @@ class LocationService(IGBEService, Generic[T]):
                                    params=self._filters)
         data = response.json()
         if isinstance(data, list):
-            data = data[0]
+            data = data[0] if data else None
 
         return self.parse(data) \
             if data else None
